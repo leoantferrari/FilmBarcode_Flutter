@@ -29,28 +29,6 @@ class _FilmState extends State<FilmApp>{
   ];
 
 
-
-
-  int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Image(image: AssetImage("assets/icon.png"))
-    ,
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-    Text(
-      "your profile",
-      style: optionStyle,
-    )
-  ];
-
   void initState(){
 
   }
