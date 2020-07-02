@@ -96,7 +96,7 @@ class _FilmState extends State<FilmApp>{
 
           appBar: AppBar(
             backgroundColor: Colors.lightBlue,
-            leading: Image.asset("assets/icon.png"),
+
               title: const Text('Film Scanner'),
               actions: <Widget>[
                 IconButton(
