@@ -91,9 +91,13 @@ class _FilmState extends State<FilmApp>{
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp(
+
         home: Scaffold(
+
           appBar: AppBar(
-              title: const Text('FilmApp'),
+            backgroundColor: Colors.lightBlue,
+            leading: Image.asset("assets/icon.png"),
+              title: const Text('Film Scanner'),
               actions: <Widget>[
                 IconButton(
                   icon: const Icon(Icons.share),
@@ -104,6 +108,7 @@ class _FilmState extends State<FilmApp>{
                 ),
               ]
           ),
+
           body:new Center(
             child: new Column(
               children: <Widget>[
@@ -116,10 +121,10 @@ class _FilmState extends State<FilmApp>{
                   padding: const EdgeInsets.all(8.0),
                 ),
                 new Image.network(movieURL),
-                new Text("UPC : " + barcode, style: TextStyle(color: Colors.brown, fontSize: 20.0), textAlign: TextAlign.center),
+                new Text("UPC : " + barcode, style: TextStyle(color: Colors.black, fontSize: 20.0), textAlign: TextAlign.center),
                 // displayImage(),
                 new Center(
-                  child: new Text("Name: "+ movieTitle, style: TextStyle(color: Colors.brown, fontSize: 20.0), textAlign: TextAlign.center)
+                  child: new Text("Name: "+ movieTitle, style: TextStyle(color: Colors.black, fontSize: 20.0), textAlign: TextAlign.center)
 
                   ),
 
